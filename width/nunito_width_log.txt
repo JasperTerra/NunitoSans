@@ -1,0 +1,62 @@
+NUNITO NOTES
+
+Links
+	https://glyphsapp.com/tutorials/alternating-glyph-shapes-with-multiple-axes
+	https://remix-tools.com/glyphsapp/tutorials
+
+General
+	Point structure; how do we convert to TT? For example on width axis; when conversion is done inside FL, point structure of actual TT outlines might differ between Condensed and Extended (because curves are wider), not sure how this is done is GA but I think through terminal it is possible to control how conversion is done.
+
+Stems (vertical of /n)
+	Normal width ExtraLight 42, Heavy 208
+
+Width and Weight
+	Condensed 		81%
+		ExtraLight	-8 and wider spacing				34
+		Heavy		-22									186
+	Extended 		125%
+		ExtraLight	+2									44
+		Heavy		+16 and more narrow word space		224
+
+
+LOG
+
+NunitoSans_BaseFile_WDTH_03
+	Adjust outlines in the four new masters of the word ‘OHamburgefontsiv’ (RMX Tools can be used for blendng, adjusting spacing etc.). Proof these letters in context to judge texture/colour compred with normal width masters. After that rest of basic Latin and figures can follow. Then expanded Latin, symbols, Cyrillic, etc.
+
+
+NunitoSans_BaseFile_WDTH_02
+	Same as WDTH_01 version, but with masters for Condensed and Expanded created scaled and stems adjusted) and set up (Axes Coordinates (stem values), Weight and Width, weightClass parameters). Neither spacing (Condensed ExtraLight) nor outlines/advance widths have been touched.
+
+
+NunitoSans_BaseFile_WDTH_01
+	This is the same as the base file (NunitoSans_BaseFile_05.glyphs.zip) but with bracket layers removed. 
+	The glyphs on bracket layer 200 were added to the 208 Heavy master (so those optical corrections are in); these are marked red.
+	The glyphs on bracket layer 177 were added to the 178 Black instance by implementing a custom parameter (renaming, thus swapping them in instances) to Black and Heavy. For this purpose alternates of the following glyphs were made (.black). The origals of these are marked green, the alternates are marked dark green. The rule contains the following:
+		Property
+			Rename Glyphs
+		Value
+			a.black=a
+			ae.black=ae
+			eth.black=eth
+			e.black=e
+			schwa.black=schwa
+			gstroke.black=gstroke
+			oe.black=oe
+			ordfeminine.black=ordfeminine
+			ordmasculine.black=ordmasculine
+			Haabkhasian-cy.black=Haabkhasian-cy
+			ve-cy.black=ve-cy
+			sha-cy.black=sha-cy
+			shcha-cy.black=shcha-cy
+			softsign-cy.black=softsign-cy
+			hardsign-cy.black=hardsign-cy
+			yeru-cy.black=yeru-cy
+			nje-cy.black=nje-cy
+			ia-cy.black=ia-cy
+			yusbig-cy.black=yusbig-cy
+			kaverticalstroke-cy.black=kaverticalstroke-cy
+			haabkhasian-cy.black=haabkhasian-cy
+			cheverticalstroke-cy.black=cheverticalstroke-cy
+
+
