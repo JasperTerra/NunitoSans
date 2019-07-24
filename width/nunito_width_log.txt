@@ -1,16 +1,23 @@
-NUNITO NOTES
+NUNITO NOTES:
 
-Links
+Overshoots Basefile:
+	ExtraLight = 8
+	Heavy = 12
+
+Overshoots WDTH
+	Set to 12 in all masters, from here we can judge if Condensed and Expanded need more or less overshoot.
+
+Links:
 	https://glyphsapp.com/tutorials/alternating-glyph-shapes-with-multiple-axes
 	https://remix-tools.com/glyphsapp/tutorials
 
-General
+General:
 	Point structure; how do we convert to TT? For example on width axis; when conversion is done inside FL, point structure of actual TT outlines might differ between Condensed and Extended (because curves are wider), not sure how this is done is GA but I think through terminal it is possible to control how conversion is done.
 
-Stems (vertical of /n)
+Stems (vertical of /n):
 	Normal width ExtraLight 42, Heavy 208
 
-Width and Weight
+Width and Weight:
 	Condensed 		81%
 		ExtraLight	-8 and wider spacing				34
 		Heavy		-22									186
@@ -18,11 +25,51 @@ Width and Weight
 		ExtraLight	+2									44
 		Heavy		+16 and more narrow word space		224
 
+Ratios (mistakes in original drawings, mistakes in extrapolations, etc.):
+	ExtraLight
+		O v45 h41 = 0,911111111111111
+		H v42 h39 = 0,928571428571429
+		f v42 h36 = 0,857142857142857
+		n v42 h40 = 0,952380952380952
+		o v45 h41 = 0,911111111111111
+	Heavy
+		O v00 h00
+		H v00 h00
+		f v00 h00
+		n v00 h00
+		o v00 h00
+	Stem values Condensed
+		ExtraLight
+			O v36 h33
+			H v34 h32
+			f v34 h29
+			n v34 h32
+			o v36 h31
+		Heavy
+			O v00 h00
+			H v00 h00
+			f v00 h00
+			n v00 h00
+			o v00 h00
+	Stem values Expanded
+		ExtraLight
+			O v47 h41
+			H v44 h40
+			f v44 h37
+			n v44 h41
+			o v47 h40
+		Heavy
+			O v00 h00
+			H v00 h00
+			f v00 h00
+			n v00 h00
+			o v00 h00
 
-LOG
+
+LOG:
 
 NunitoSans_BaseFile_WDTH_03
-	Adjust outlines in the four new masters of the word ‘OHamburgefontsiv’ (RMX Tools can be used for blendng, adjusting spacing etc.). Proof these letters in context to judge texture/colour compred with normal width masters. After that rest of basic Latin and figures can follow. Then expanded Latin, symbols, Cyrillic, etc.
+	Adjusted outlines in the new masters (Condensed and Expanded) of ExtraLight (‘OHhamburgefontsiv’). Made proofs using the adjusted glyphs. For the Condensed ExtraLight +18 tracking was added in InDesign as test to determine overall colour next to normal width ExtraLight and Expanded ExtraLight.
 
 
 NunitoSans_BaseFile_WDTH_02
