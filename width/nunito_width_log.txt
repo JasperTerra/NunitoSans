@@ -70,14 +70,57 @@ LINKS:
 
 
 TO DISCUSS / CHECK / FIX / ADD:
-	Vertical position of anchor ‘topright’ in Heavy masters
-	/l; add hockey stick to normla width masters, stretch for new masters
-	/space; seems too wide in Heavy masters, should be checked in everyone’s files and synced accordingly
-	/b /n /u (all glyphs with a bowl and stem); /b for example has an optical correction of the bottom part of stem, it is made thinner than top. This shoudl be checked across lowercase of all masters.
-
+	• vertical position of anchor ‘topright’ in Heavy masters
+	• position and thickness of underline
+	• glyphs on bracket layer (Heavy); can be removed imo, the bracket layer should be default (/a /e etc. seem too heavy)
+	• 
 
 
 LOG (SUMMARY OF CHANGES PER VERSION):
+
+
+NunitoSans_BaseFile_WDTH_10
+	Continued with expanding the lowercase and uppercase across the four masters, however, after some discussion and looking at the 03 proof, we decided that Condensed ExtraLight and Expanded ExtraLight were still too light. Also, perhaps new Heavy masters could get a hair more weight. 
+	After roughly tweaking weights and spacing of (tracking) Expanded and Condensed masters, fresh files were generated for the new masters and set in Glyphs file; set up axes coordinates, metrics, alignment zones and custom parameters for the masters. Set up instances for the new masters, set up style names, weight, width, added weightClass parameters.
+	Added and/or increased spacing based on proof 08:
+	Condensed ExtraLight, tracking +12
+	Condensed Heavy, tracking +8
+	Expanded ExtraLight, tracking -8
+	Expanded Heavy, tracking -2
+	Having settled on the widths, weights and increased or decreased tracking, fresh UFO files were generated for the complete character set, imported as new masters, set up axes coordinates, metrics, alignment zones and custom parameters for the masters. Set up instances for the new masters; style names, weight, width, added weightClass parameters.
+	From here we began anew with checking, cleaning and tweaking the generated outlines across the four new masters.
+
+
+
+NunitoSans_BaseFile_WDTH_09
+	Due to quite some major and minor changes in the base file (v21), we discussed that, although glyphs were already touched and cleaned up, it would be best to generate the glyphs anew. This means a bit of time is lost, but since still early in the drawing stage the damage is overseeable. 
+	Exported masters as UFO from v21. Generated four new UFO files (one for each new master) from existing Stretch files. 
+	Imported UFO files as masters, set up axes coordinates, metrics, alignment zones and custom parameters for the masters. Set up instances for the new masters, set up style names, weight, width, added weightClass parameters.
+	Added outlines (of touched glyphs)to background as reference.
+	Checked and (re)drawn: H /O /a /a.ss01 /b /d /e /f /g /h /i /idotless /l /m /n /o /p /thorn /q /r /s /t /u /v (in all four new masters); /a /e /s need to follow, but /a and /e need outlines in .black alternates added (not in Stretch). 
+	Generated proof with the redrawn glyphs (Nunito_WidthMastersTest_03_A4.pdf). Comments with proof (not that different from previous one): 	
+		/f /t
+		Seem too dark across all Heavy masters, especially if they are succeeded by themselves (so ff or tt in a word). This becomes most obvious in Expanded Heavy.
+		/space
+		Seems too wide in all Heavy masters, would be good if we decide a width and make sure this is synced across all our files. Condensed and Expanded can then follow.
+		
+		/s
+		Also seems too dark (was darker in previous proof though); mostly noticeable in Expanded Heavy and Heavy masters. I think a solution with a more narrow spine (as Barbara drew in Micro) could be a good solution. See also /a /e next. 
+		
+		/a /e
+		Seem too dark in Expanded Heavy and Heavy. I think the alternates (formerly Bracket layer 177) can be the default ones. These also have a very thin horizontal mid-stroke, so spine of /s  could follow this principle.
+		
+		/v
+		In all Heavy masters I think it can have a cut and/or inktrap; the bottom tends to clog in print. I’m curious what Barbara’s opinion about this is, since it relates to Micro. 
+		
+		/m
+		Could be widened in Condensed Heavy. Seems a tad dark.
+
+		Regarding the ExtraLights, I have not much comments. The +18 tracking in Condensed ExtraLight seems ok to me. But I’d prefer to finish LC and UC and then we can do some proofs with tracking in InDesign before final decision.
+
+		Spacing will also need a proper look, mostly in Heavy masters for Condensed (rhythm of white picket fence) and Expanded.
+	Checked and redrawn glyphs are marked green.
+
 
 NunitoSans_BaseFile_WDTH_08
 	Add outlines in .black alternates of /a and /e (not in Stretch). Finish drawing of /a /e /s (plus /a.black and /e.black). Generate test fonts, make proofs. Asses proofs in print; notes: in all heavy masters /f and /t seem too dark, /s too dark in the Expanded Heavy, perhaps already in the Heavy mster itself. For /a and /e I think the .black alternates could be used instead of normal ones, this would also nicely match up with /s (spine). Only caveat I can see here is optical corrections in Heavy masters might influence lighter weights too much.
