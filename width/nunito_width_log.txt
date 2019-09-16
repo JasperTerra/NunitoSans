@@ -73,11 +73,38 @@ TO DISCUSS / CHECK / FIX / ADD:
 	• vertical position of anchor ‘topright’ in Heavy masters
 	• position and thickness of underline
 	• glyphs on bracket layer (Heavy); can be removed imo, the bracket layer should be default (/a /e etc. seem too heavy)
-	• 
+	• /exclam /question; differnce between dot and stroke (mistake)
+	• de stelling van de kielemees checken (fout in Heavy master)
 
 
 LOG (SUMMARY OF CHANGES PER VERSION):
 
+
+NunitoSans_BaseFile_WDTH_12
+	Finish tabular oldstyle figures
+	Finish basic punctuation
+	Check relation of stems in figures to stems in capitals (lining) an lowercase (oldstyle)
+	Check widths of figures (make sure ExtraLight and Heavy have same widths)
+	Make proofs:
+		Lowercase only
+		Capitals only
+		Lining figures only
+		Oldstyle figures only
+		Mixed setting
+	What needs some attention?
+		Curves in basic shapes
+		Diagonals
+		Weight of figures
+		Punctuation (space between double quotes etc.)
+
+NunitoSans_BaseFile_WDTH_12
+	Completed tabular oldstyle figures and basic punctuation, made proofs (09) for the four new masters with normal width masters. Proofs consist of lowercase glyphs (random words), uppercase glyphs (random words), figures (random strings) showing both lining tabular and oldstyle tabular, running text samples.
+	Added colour coding for glyphs changed as in v23 of the base file (these still should be checked).
+	Corrections to /s and /S based on feedback from meeting.
+
+
+NunitoSans_BaseFile_WDTH_11
+	Finished checking, cleaing and drawing the lowercase, uppercase and tabular lining figures across the four masters.
 
 NunitoSans_BaseFile_WDTH_10
 	Continued with expanding the lowercase and uppercase across the four masters, however, after some discussion and looking at the 03 proof, we decided that Condensed ExtraLight and Expanded ExtraLight were still too light. Also, perhaps new Heavy masters could get a hair more weight. 
