@@ -70,37 +70,55 @@ LINKS:
 
 
 TO DISCUSS / CHECK / FIX / ADD:
-	• vertical position of anchor ‘topright’ in Heavy masters
+	• diacritics; size of, right now height in new masters equals normal width (since ExtraLight and Heavy match in height as well), but perhaps some accents need to be made smaller in Condensed / bigger in Expanded (not tilde shapes, ring, etc.) 
 	• position and thickness of underline
-	• glyphs on bracket layer (Heavy); can be removed imo, the bracket layer should be default (/a /e etc. seem too heavy)
-	• /exclam /question; differnce between dot and stroke (mistake)
-	• de stelling van de kielemees checken (fout in Heavy master)
+	• /Hbar; lower mid? (also /dcroat /hbar)
+	• anchors and position of accents in new masters
+	• glyphs using horn; check position of horn/anchors and use with tilde
+	• ogonek based glyphs; position of anchor (for example ęj combination might be problematic)
+	• currencies with double stroke in Expanded Heavy; thickness of strokes
+
 
 
 LOG (SUMMARY OF CHANGES PER VERSION):
 
 
-NunitoSans_BaseFile_WDTH_12
-	Finish tabular oldstyle figures
-	Finish basic punctuation
-	Check relation of stems in figures to stems in capitals (lining) an lowercase (oldstyle)
-	Check widths of figures (make sure ExtraLight and Heavy have same widths)
-	Make proofs:
-		Lowercase only
-		Capitals only
-		Lining figures only
-		Oldstyle figures only
-		Mixed setting
-	What needs some attention?
-		Curves in basic shapes
-		Diagonals
-		Weight of figures
-		Punctuation (space between double quotes etc.)
+NunitoSans_BaseFile_WDTH_21
+	Made UFO Stretches for the denominators, added, checked and corrected new outlines. Set up composites for numerators, superiors, inferiors and fractions.
+	Compared with latest base file (27)
+	Fixed incompatible glyphs (red triangle).
+	Checked outline compatiblity cross all touched glpyhs (all, excluding CY).
+	Made spacing and language proofs for the new masters with normal width .
+
+
+NunitoSans_BaseFile_WDTH_16 — 20
+	Expanding set (currencies, signs, symbols, punctuation).
+
+
+NunitoSans_BaseFile_WDTH_15
+	Accents; checking lower case (basic Latin comb, extended Latin, Vietnamese): drawing, height (ensuring equal height in all ExtraLight masters and Heavy masters respectively), position of anchors (some glyphs have issues here and there from extrapolation).
+	Accents; started checking upper case (basic Latin comb, extended Latin): drawing, height (ensuring equal height in all ExtraLight masters and Heavy masters respectively), position of anchors (some glyphs have issues here and there from extrapolation).
+
+
+NunitoSans_BaseFile_WDTH_14
+	Generated new versions of marked glyphs from base file 24;
+	/colonsign /euro /hryvnia /lira /liraTurkish /manat /naira /peso /ruble /rupeeIndian /tenge /tugrik /won /yen
+	Outlines of these where added either on foreground or background if needed.
+	Accents; started checking lower case basic (Latin comb): drawing, height (ensuring equal height in all ExtraLight masters and Heavy masters respectively), position of anchors (some glyphs have issues here and there from extrapolation).
+
+
+NunitoSans_BaseFile_WDTH_13
+	Corrections based on proof 09; uppercase glyphs (increased weight of vertical stems by 8 units), adjustments to /S (all new masters) based on Jacques adjustments to /s, corrections to /m based on new version of /n (also adjusted width of slightly in Condensed masters, especially in Condensed Heavy).
+	Generated new versions of marked glyphs from base file 23;
+	/Hbar /ldot /tcaron /Emacronacute /Emacrongrave /Omacronacute /Omacrongrave /l.ss02 /lacute.ss02 /lcaron.ss02 /lcommaaccent.ss02 /ldot.ss02 /ldotbelow.ss02 /lj.ss02 /llinebelow.ss02 /lslash.ss02 /fl.ss02 /partialdiff /at /apostrophemod /commaturnedmod /verticallinemod /macroncomb_gravecomb /macroncomb_acutecomb /macroncomb_gravecomb.case /macroncomb_acutecomb.case /hookabovecomb.case /circumflexcomb_acutecomb /circumflexcomb_gravecomb /circumflexcomb_hookabovecomb /circumflexcomb_tildecomb /circumflexcomb_acutecomb.case /circumflexcomb_gravecomb.case /circumflexcomb_hookabovecomb.case /circumflexcomb_tildecomb.case
+	Outlines of these where added either on foreground or background if needed.
+	Checked, drawn/corrected extended Latin uppercase and lowercase. Extended Latin composites were checked in terms of use of right components, for example more narrow version of tilde for use with /ohorntilde. 
+
 
 NunitoSans_BaseFile_WDTH_12
-	Completed tabular oldstyle figures and basic punctuation, made proofs (09) for the four new masters with normal width masters. Proofs consist of lowercase glyphs (random words), uppercase glyphs (random words), figures (random strings) showing both lining tabular and oldstyle tabular, running text samples.
-	Added colour coding for glyphs changed as in v23 of the base file (these still should be checked).
-	Corrections to /s and /S based on feedback from meeting.
+	Completed tabular oldstyle figures and basic punctuation, made proofs (09) for the four new masters (with normal width masters). Proofs consist of lowercase glyphs (random words), uppercase glyphs (random words), figures (random strings) showing both lining tabular and oldstyle tabular, and running text samples in English.
+	Added colour coding for glyphs changed as in v23 of the base file by Jacques (these glyphs should thus still be checked).
+	From here corrections need to be made before th characterset can be expanded across the four masters. Some things that need attention: speed of curves in the new masters (compared to normal width), diagonals (weight, especially in Exapnded masters), Weight of the figures (especially in Heavy masters). Perhaps punctuation is a bit small in the ExtraLight masters? After a group meeting and going over the proofs as well, Jacques took a look at the file and provided feedback (and some micro surgery) on the work thus far. Corrections to /s and /S based on feedback from meeting (v12); make sure these are in/compared with the version from Jacques (v13).
 
 
 NunitoSans_BaseFile_WDTH_11
